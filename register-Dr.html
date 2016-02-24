@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>医生用户注册</title>
+<link href="css/base.css" rel="stylesheet" />
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/register.css" rel="stylesheet" />
+</head>
+
+<body>
+<nav id="nav" class="nav">
+  <div id="nav-logo" class="nav-logo">
+    <div id="nav-logo-img" class="nav-logo-img">
+    	<a href="index.html"><img src="images/logo.png"/></a>
+    </div>
+    <div class="cb"></div>
+  </div>
+</nav>
+<main>
+<div class="mAuto w1000 boxshadow registerFrame">
+    	<div class="fl registerForm">
+        	<form method="post" enctype="application/x-www-form-urlencoded">
+           	  <label for="phone">手机号码</label>
+              <input name="phone" class="phone" id="phone" maxlength="11" />
+              <span class="warmming">* 请正确填写手机号码。</span>
+           	  <label for="password">密码</label>
+              <input name="password" type="password" class="password" id="password" maxlength="16" />
+              <span class="warmming">* 登录密码不能少于6个字符。</span>
+              <div class="passwordTips tc f12"><span class="pr5">密码强度</span><span class="passwordTips-0">弱</span><span class="passwordTips-1">中</span><span class="passwordTips-1">强</span></div>
+           	  <label for="confirmPassword">确定密码</label>
+              <input name="confirmPassword" class="confirmPassword" id="confirmPassword" maxlength="16" />
+              <span class="warmming">* 登录密码不能少于6个字符。</span>
+           	  <label for="realname">真实姓名</label>
+              <input name="realname" class="realname" id="realname" />
+           	  <label for="mail">邮箱</label>
+              <input name="mail" class="mail" id="mail" />
+           	  <label for="hospital">所属医院</label>
+              <input name="hospital" class="hospital" id="hospital" />
+              <span class="warmming"> 请填写医院全名</span>
+           	  <label for="department">所属科室</label>
+              <select class="department" name="department" id="department">
+              	<option>请选择科室</option>
+              	<option>A1</option>
+              </select>
+           	  <label for="professional">职称</label>
+              <select class="professional" name="professional" id="professional">
+              	<option>请选择职称</option>
+              	<option>职称1</option>
+              	<option>职称2</option>
+              </select>
+           	  <label for="telphone">科室电话</label>
+              <input name="telphone" class="telphone" id="telphone" />
+           	  <label for="hobby">擅长及增加介绍</label>
+              <textarea class="hobby" id="hobby" name="hobby"></textarea>
+           	  <label for="invitationCode">邀请码（选填）</label>
+              <input name="invitationCode" class="invitationCode" id="invitationCode" />
+           	  <label for="imageCode">验证码</label>
+              <input name="imageCode" class="imageCode fl mr10" id="imageCode" />
+              <img class="codeImg fl" src="images/identifyingCode.png"/><a class="changeCode" href="#changeCode">换一张</a>
+              <span class="warmming codeWarm">* 验证码错误。</span>
+              <div class="cb"></div>
+              <input type="checkbox" name="cb[]" id="agree" class="agree" />
+              <div class="agreeClause fl">我已阅读并接受<a class="clauseLink" href="#">《旭阳医疗器械服务条款》。</a></div>
+              <div class="cb"></div>
+              <input name="submit" class="submit" type="submit" id="submit" value="注册" />
+              <div class="loginQuestion mt10 f12 tr">已经注册？<a href="#" class="gotoLogin">请登录</a></div>
+            </form>
+		</div>
+        <div class="fr company-dr"><img src="images/company.png"></div>
+        <div class="cb"></div>
+    </div>
+</main>
+<footer class="footer">
+  <div class="footer-row1">
+    <div class="footer-row1-link w1000 mAuto">
+      <dl>
+        <dd class="listitem"><a href="index.html">首页</a> </dd>
+        <dd class="listitem"><a href="aboutAs.html">走进旭阳</a> </dd>
+        <dd class="listitem"><a href="productserver-medical.html">产品服务</a> </dd>
+        <dd class="listitem"><a href="health-assort.html">营养保健</a> </dd>
+        <dd class="listitem"><a href="case-share.html">健康分享</a> </dd>
+        <dt class="listitem-next"><a href="#">前往旭日器械商城&gt;</a></dt>
+        <dd class="cb"></dd>
+      </dl>
+    </div>
+  </div>
+  <div class="footer-row2">
+    <div class="footer-row2-detail w1000 mAuto">
+      <div class="fl pt20">
+        <p class="pb10"><img src="images/detail_address.png" hspace="5" vspace="0" align="absmiddle" />地址：广州市天河区燕岭路120号金燕大厦502</p>
+        <p class="pb10"><img src="images/detail_mail.png" hspace="5" vspace="0" align="absmiddle" />邮箱：123456789@qq.com</p>
+      </div>
+      <div class="fl pt20 footer-row2-detail-col2">
+        <p class="pb10"><img src="images/detail_phone.png" hspace="5" vspace="0" align="absmiddle" />联系电话：440-009-9778</p>
+        <p class="pb10"><img src="images/detail_fax.png" hspace="5" vspace="0" align="absmiddle" />传真：1234567891231</p>
+      </div>
+      <p class="fr pt20 code"><img src="images/code.png" width="73" height="73"></p>
+      <div class="cb"></div>
+      <p class="pl5 pt10 fl address">&copy;1996-2015 ZhengBang京ICP备050567892号<span class="textIndent">旭阳医疗动漫科技有限公司</span></p>
+      <p class="fr pr5 pt10 scan"><span>扫一扫关注旭阳微信</span></p>
+      <p class="cb"></p>
+    </div>
+  </div>
+  </div>
+</footer>
+</body>
+</html>
