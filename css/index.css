@@ -70,6 +70,7 @@
 }
 .main-product-show{
 	width:100%;
+	display: none;
 }
 .main-product-list01,.main-product-list01 img{
 	width:490px;
@@ -106,9 +107,10 @@
 .main-news-show{
 	margin-top:13px;
 }
+.main-news-show-listPhoto{width:912px;height:175px;overflow: hidden;position: relative;}
 .main-news-show-listPhoto ul{
 	list-style:none;
-	width:912px;
+	width:99999999px;
 }
 .main-news-show-listPhoto ul li{
 	float:left;
