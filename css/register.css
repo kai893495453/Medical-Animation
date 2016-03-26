@@ -2,7 +2,7 @@
 .registerFrame{margin-top:20px;margin-bottom:65px;}
 .registerFrame .registerForm{margin-left:48px;padding-top:45px;padding-left:15px;width:478px;}
 .registerFrame .registerForm label{display:block;font-size:14px;color:#666;height:30px;line-height:30px;}
-.registerFrame .registerForm .warmming{padding-left:4px;color:#f61d1d;font-size:12px;}
+.registerFrame .registerForm .warmming{padding-left:4px;color:#f61d1d;font-size:12px;display: none;}
 .registerFrame .registerForm input{margin-bottom:8px;outline:none;border:1px solid #ddd;width:268px;padding:9px 30px 9px 10px;}
 .registerFrame .registerForm .phone{background:url(../images/sprite/login.png) no-repeat right 5px;}
 .registerFrame .registerForm .password,.registerFrame .registerForm .confirmPassword{background:url(../images/sprite/login.png) no-repeat right -37px;margin-bottom:0px;}

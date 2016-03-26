@@ -4,6 +4,18 @@
     1=>array("imgAddr"=>"images/banner.png","urlAddr"=>"#2"),
     2=>array("imgAddr"=>"images/banner.png","urlAddr"=>"#3")
   );
+  $newsArr = array(
+  	0=>array("news_title"=>"旭阳新研发的医疗器械上市1","img_url"=>"images/news02.png"),
+  	1=>array("news_title"=>"旭阳新研发的医疗器械上市2","img_url"=>"images/news02.png"),
+  	2=>array("news_title"=>"旭阳新研发的医疗器械上市3","img_url"=>"images/news02.png"),
+  	3=>array("news_title"=>"旭阳医疗动漫科技分公司成立1","img_url"=>"images/news01.png"),
+  	4=>array("news_title"=>"旭阳医疗动漫科技分公司成立2","img_url"=>"images/news01.png"),
+  	5=>array("news_title"=>"旭阳医疗动漫科技分公司成立3","img_url"=>"images/news01.png"),
+  	6=>array("news_title"=>"旭阳新研发的医疗器械1","img_url"=>"images/news03.png"),
+  	7=>array("news_title"=>"旭阳新研发的医疗器械2","img_url"=>"images/news03.png"),
+  	8=>array("news_title"=>"旭阳新研发的医疗器械3","img_url"=>"images/news03.png")
+  );
+  // $productArr = array();
 ?>
 <!DOCTYPE html>
 <html>
@@ -66,7 +78,7 @@
       </ol>
     </div>
     <div class="pa top nav-div-list">      <dl class="w1000 mAuto nav-list">
-        <dd class="nav-list-current"><a href="index.html" class="aCurrent">首页</a></dd>
+        <dd class="nav-list-current"><a href="index.php" class="aCurrent">首页</a></dd>
         <dd>
         	<a href="#">走进旭阳</a>
             <ul class="nav-list-subnav">
@@ -79,22 +91,22 @@
         <dd>
         	<a href="#">产品服务</a>
             <ul class="nav-list-subnav">
-            	<li><a href="productserver-medical.html">医疗器械</a></li>
+            	<li><a href="productserver-medical.php">医疗器械</a></li>
             </ul>
         </dd>
         <dd>
         	<a href="#">营养保健</a>
             <ul class="nav-list-subnav">
-                <li><a href="health-assort.html">按功效分类</a></li>
-                <li><a href="health-mineral.html">矿物质</a></li>
-                <li><a href="health-vitamin.html">维生素</a></li>
-                <li><a href="health-nutrient.html">营养素</a></li>
+                <li><a href="health-assort.php">按功效分类</a></li>
+                <li><a href="health-mineral.php">矿物质</a></li>
+                <li><a href="health-vitamin.php">维生素</a></li>
+                <li><a href="health-nutrient.php">营养素</a></li>
             </ul>
         </dd>
         <dd>
         	<a href="#">健康分享</a>
             <ul class="nav-list-subnav">
-            	<li><a href="case-share.html">案例分享</a></li>
+            	<li><a href="case-share.php">案例分享</a></li>
             </ul>
         </dd>
         <dt class="fr">
@@ -115,7 +127,7 @@
         <div class="cb"></div>
       </div>
       <div class="fr main-product-nav-ul" id="product-list">
-          <a class="main-product-nav-listitemCurrent">轮椅助行</a>
+          <a class="main-product-nav-listitem main-product-nav-listitemCurrent">轮椅助行</a>
           <a class="main-product-nav-listitem">日常护理</a>
           <a class="main-product-nav-listitem">检测</a>
           <a class="main-product-nav-listitem">中医理论</a>
@@ -224,42 +236,12 @@
         <div class="fl">
           <div class="main-news-show-listPhoto" id="news-list">
             <ul>
+            <?php foreach($newsArr as $value): ?>
               <li>
-                <div><img class="productImg" src="images/news01.png"></div>
-                <div class="productDetail"><img src="images/list.png" width="5" height="5" align="absmiddle">&nbsp;&nbsp;旭阳医疗动漫科技分公司成立</div>
+                <div><img class="productImg" src=<?php echo $value['img_url']; ?>></div>
+                <div class="productDetail"><img src="images/list.png" width="5" height="5" align="absmiddle">&nbsp;&nbsp;<?php echo $value['news_title']; ?></div>
               </li>
-              <li>
-                <div><img class="productImg" src="images/news01.png"></div>
-                <div class="productDetail"><img src="images/list.png" width="5" height="5" align="absmiddle">&nbsp;&nbsp;旭阳医疗动漫科技分公司成立</div>
-              </li>
-              <li>
-                <div><img class="productImg" src="images/news01.png"></div>
-                <div class="productDetail"><img src="images/list.png" width="5" height="5" align="absmiddle">&nbsp;&nbsp;旭阳医疗动漫科技分公司成立</div>
-              </li>
-              <li>
-                <div><img class="productImg" src="images/news02.png"></div>
-                <div class="productDetail"><img src="images/list.png" width="5" height="5" align="absmiddle">&nbsp;&nbsp;旭阳新研发的医疗器械上市</div>
-              </li>
-              <li>
-                <div><img class="productImg" src="images/news02.png"></div>
-                <div class="productDetail"><img src="images/list.png" width="5" height="5" align="absmiddle">&nbsp;&nbsp;旭阳新研发的医疗器械上市</div>
-              </li>
-              <li>
-                <div><img class="productImg" src="images/news02.png"></div>
-                <div class="productDetail"><img src="images/list.png" width="5" height="5" align="absmiddle">&nbsp;&nbsp;旭阳新研发的医疗器械上市</div>
-              </li>
-              <li>
-                <div><img class="productImg" src="images/news03.png"></div>
-                <div class="productDetail"><img src="images/list.png" width="5" height="5" align="absmiddle">&nbsp;&nbsp;旭阳新研发的医疗器械</div>
-              </li>
-              <li>
-                <div><img class="productImg" src="images/news03.png"></div>
-                <div class="productDetail"><img src="images/list.png" width="5" height="5" align="absmiddle">&nbsp;&nbsp;旭阳新研发的医疗器械</div>
-              </li>
-              <li>
-                <div><img class="productImg" src="images/news03.png"></div>
-                <div class="productDetail"><img src="images/list.png" width="5" height="5" align="absmiddle">&nbsp;&nbsp;旭阳新研发的医疗器械</div>
-              </li>
+             <?php endforeach; ?>
               <div class="cb"></div>
             </ul>
           </div>

@@ -1,3 +1,16 @@
+<?php
+$arr = array(
+  0 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床1","urlAddr"=>"#a1"),
+  1 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床2","urlAddr"=>"#a2"),
+  2 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床3","urlAddr"=>"#a3"),
+  3 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床4","urlAddr"=>"#a4"),
+  4 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床5","urlAddr"=>"#a5"),
+  5 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床6","urlAddr"=>"#a6"),
+  6 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床7","urlAddr"=>"#a7"),
+  7 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床8","urlAddr"=>"#a8"),
+  8 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床9","urlAddr"=>"#a9")
+);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,7 +50,7 @@
     </div>
     <div class="pa top nav-div-list">
       <dl class="w1000 mAuto nav-list">
-        <dd class="nav-list-current"><a href="index.html" class="aCurrent">首页</a></dd>
+        <dd class="nav-list-current"><a href="index.php" class="aCurrent">首页</a></dd>
         <dd>
         	<a href="#">走进旭阳</a>
             <ul class="nav-list-subnav">
@@ -50,22 +63,22 @@
         <dd>
         	<a href="#">产品服务</a>
             <ul class="nav-list-subnav">
-            	<li><a href="productserver-medical.html">医疗器械</a></li>
+            	<li><a href="productserver-medical.php">医疗器械</a></li>
             </ul>
         </dd>
         <dd>
         	<a href="#">营养保健</a>
             <ul class="nav-list-subnav">
-                <li><a href="health-assort.html">按功效分类</a></li>
-                <li><a href="health-mineral.html">矿物质</a></li>
-                <li><a href="health-vitamin.html">维生素</a></li>
-                <li><a href="health-nutrient.html">营养素</a></li>
+                <li><a href="health-assort.php">按功效分类</a></li>
+                <li><a href="health-mineral.php">矿物质</a></li>
+                <li><a href="health-vitamin.php">维生素</a></li>
+                <li><a href="health-nutrient.php">营养素</a></li>
             </ul>
         </dd>
         <dd>
         	<a href="#">健康分享</a>
             <ul class="nav-list-subnav">
-            	<li><a href="case-share.html">案例分享</a></li>
+            	<li><a href="case-share.php">案例分享</a></li>
             </ul>
         </dd>
         <dt class="fr">
@@ -76,7 +89,7 @@
     </div>
   </div>
 </nav>
-<article class="breadcrumbs f12">当前位置： <a href="index.html">首页</a> > <a href="#">产品服务</a> > <a href="#">医疗器械</a></article>
+<article class="breadcrumbs f12">当前位置： <a href="index.php">首页</a> > <a href="#">产品服务</a> > <a href="#">医疗器械</a></article>
 <!--正文开始-->
 <main>
   <div class="content w1000 mAuto">
@@ -112,23 +125,12 @@
       <div class="products">
         <ul class="pb50">
           <?php
-            $arr = array(
-              0 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床1","urlAddr"=>"#a1"),
-              1 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床2","urlAddr"=>"#a2"),
-              2 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床3","urlAddr"=>"#a3"),
-              3 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床4","urlAddr"=>"#a4"),
-              4 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床5","urlAddr"=>"#a5"),
-              5 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床6","urlAddr"=>"#a6"),
-              6 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床7","urlAddr"=>"#a7"),
-              7 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床8","urlAddr"=>"#a8"),
-              8 => array("imgAddr"=>"images/product/product-01.png","title"=>"多功能带便孔护理床9","urlAddr"=>"#a9")
-            );
             foreach($arr as $value):
           ?>
           <li class="pt40 fl ml25">
             <div>
-              <a href=<?php echo $value['urlAddr']; ?> class="mb10"><img src=<?php echo $value[imgAddr]; ?> /></a>
-              <span class="pl20"><?php echo $value[title]; ?></span>
+              <a href=<?php echo $value['urlAddr']; ?> class="mb10"><img src=<?php echo $value['imgAddr']; ?> /></a>
+              <span class="pl20"><?php echo $value['title']; ?></span>
             </div>
           </li>
           <?php
