@@ -1,0 +1,35 @@
+@charset "utf-8";
+.registerFrame{margin-top:20px;margin-bottom:65px;}
+.registerFrame .registerForm{margin-left:48px;padding-top:45px;padding-left:15px;width:478px;}
+.registerFrame .registerForm label{display:block;font-size:14px;color:#666;height:30px;line-height:30px;}
+.registerFrame .registerForm .warmming{padding-left:4px;color:#f61d1d;font-size:12px;display: none;}
+.registerFrame .registerForm input{margin-bottom:8px;outline:none;border:1px solid #ddd;width:268px;padding:9px 30px 9px 10px;}
+.registerFrame .registerForm .phone{background:url(../images/sprite/login.png) no-repeat right 5px;}
+.registerFrame .registerForm .password,.registerFrame .registerForm .confirmPassword{background:url(../images/sprite/login.png) no-repeat right -37px;margin-bottom:0px;}
+.registerFrame .registerForm .passwordTips{width:310px;padding:12px 0px 0px 0px;color:#666;}
+.registerFrame .registerForm .passwordTips-0,.registerFrame .registerForm .passwordTips-1{width:44px;padding:2px 15px;margin-right:2px;background-color:#dddddd;}
+.registerFrame .registerForm .passwordTips-0{color:#fff;background-color:#fcbb6e;}
+.registerFrame .registerForm .confirmPassword,.registerFrame .registerForm .mail,.registerFrame .registerForm .code{margin-bottom:8px;}
+.registerFrame .registerForm .imageCode{width:90px;padding-right:10px;}
+.registerFrame .registerForm .codeImg{width:114px;height:36px;}
+.registerFrame .registerForm .changeCode,.registerFrame .registerForm .codeWarm{display:block;margin:8px;float:left;padding-right:14px;}
+.registerFrame .registerForm .agree{float:left; width:auto;margin-top:7px;margin-bottom:40px;}
+.registerFrame .registerForm .agreeClause{margin-top:2px;margin-left:12px;}
+.registerFrame .registerForm .agreeClause a{color:#41ccf3;}
+.registerFrame .registerForm .submit{background-color:#41ccf3;font-size:16px;color:#fff; outline:none; border:none; border-radius:5px;}
+.registerFrame .registerForm .loginQuestion{color:#999;width:270px;}
+.registerFrame .registerForm a{color:#41ccf3;}
+
+
+.registerFrame .company{margin-right:40px;padding-top:158px;}
+.registerFrame .company-dr{margin-right:40px;padding-top:45px;}
+.registerFrame .company img,.registerFrame .company-dr img{width:400px;height:265px;}
+
+
+/*医生注册样式*/
+/*科室与职称*/
+.registerFrame .registerForm .professional,.registerFrame .registerForm .department{margin-bottom:8px;outline:none;border:1px solid #ddd;width:310px;padding:9px 10px;}
+.registerFrame .registerForm .professional option,.registerFrame .registerForm .department option{color:#999999;font-size:12px;}
+.registerFrame .registerForm .professional,.registerFrame .registerForm .department{color:#999;background:url(../images/sprite/register.png) no-repeat right 0px;appearance:none;	-moz-appearance:none;-webkit-appearance:none;}
+/*擅长及增加介绍*/
+.registerFrame .registerForm .hobby{width:518px;height:62px;outline:none;border:1px solid #ddd;padding:9px 10px;}

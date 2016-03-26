@@ -1,0 +1,31 @@
+/* CSS Document */
+.content{padding-top:30px;}
+.content .content-main .breadcrumbs{width:730px;}
+.content .content-main .line{width:790px;}
+.content .content-main .list{width:750px;margin-left:40px;}
+.content .content-main .list ul{ margin:15px 0px;} 
+.content .content-main .list ul li{height:30px; line-height:30px;}
+.content .content-main .list ul li img{padding-right:8px;}
+.content .content-main .list .map{margin:30px 0px 105px 0px;}
+/*销售网络*/
+.content .content-main .list .showMap{margin-top:30px;}
+.content .content-main .list .showMap img{width:750px; height:590px;}
+/*招贤纳士*/
+.content .content-main .list dl dt{color:#333;font-size:16px;height:66px; line-height:66px; font-weight:bold;}
+.content .content-main .list dl dt span{border-left:2px solid #41ccf3;padding-left:12px;}
+.content .content-main .list dl dd{font-size:14px;line-height:2; text-indent:2em;padding-bottom:34px; }
+.content .content-main .list dl dd ol.signUp li{padding-bottom:30px;}
+.content .content-main .list dl dd ol.signUp li .orderList{margin:0px;}
+.content .content-main .list dl dd ol.signUp li .orderList li{padding-bottom:5px;}
+/*关于旭阳*/
+.content .content-main .list .aboutAs{padding-top:50px;padding-bottom:10px;}
+.content .content-main .list .aboutAs img{height:184px;width:348px; float:left;}
+.content .content-main .list .aboutAs .details{width:377px;}
+.content .content-main .list .aboutAs .details h2,.details-bottom h2{float:none;font-size:16px;border-left:2px solid #41ccf3;padding-left:12px;}
+.content .content-main .list .aboutAs .details p,.details-bottom p{text-indent:2em;font-size:14px; line-height:1.8;padding-top:15px;}
+.content .content-main .list .aboutAs .details-bottom{width:750px;}
+.content .content-main .list .aboutAs ol{padding-top:25px;padding-bottom:85px;}
+.content .content-main .list .aboutAs ol li{float:left;padding-right:12px;}
+.content .content-main .list .aboutAs ol li.lastItem{padding-right:0px;}
+.content .content-main .list .aboutAs ol li div img{width:240px;height:160px;display:block; float:none;}
+.content .content-main .list .aboutAs ol li div p{padding-top:15px;padding-left:10px;font-size:12px;}

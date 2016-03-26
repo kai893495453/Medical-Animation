@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+.main{margin-bottom:110px;}
+.loginFrame .company{padding-right:60px;}
+.loginFrame .company img{width:510px;height:310px;}
+.loginFrame .loginForm{width:430px;}
+.loginFrame .tag .tagCurrent,.loginFrame .tag .tagOther{padding:12px 30px;}
+.loginFrame .tag .tagCurrent{background-color:#41ccf3;color:#fff;}
+.loginFrame .tag .tagOther{background-color:#f5f5f5;color:#666;}
+.loginFrame .loginForm form{padding:42px 60px;}
+.loginFrame .loginForm .login{border:1px solid #dddddd;}
+.loginFrame .loginForm .login label{display:block;height:28px;line-height:28px;}
+.loginFrame .loginForm .login .passwordLabel{display:block;float:left;;height:28px;line-height:28px;}
+.loginFrame .loginForm .login .forgetPasswordA{float:right;height:28px;line-height:28px;font-size:12px;color:#999;}
+.loginFrame .loginForm .login input{margin-bottom:8px;outline:none;border:1px solid #ddd;width:270px;padding:12px 30px 12px 10px;}
+.loginFrame .loginForm .login .username{background:url(../images/sprite/login.png) no-repeat right 10px;}
+.loginFrame .loginForm .login .password{background:url(../images/sprite/login.png) no-repeat right -35px;margin-bottom:0px;}
+.loginFrame .loginForm .login .confirmLogin{background-color:#41ccf3;color:#fff;width:310px;font-size:16px;border:none;outline:none;border-radius:5px;margin-bottom:3px;}
+.loginFrame .loginForm .login .registerA{float:right;height:30px;line-height:30px;font-size:12px;color:#999;}
