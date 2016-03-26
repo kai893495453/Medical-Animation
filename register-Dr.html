@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>医生用户注册</title>
@@ -22,22 +22,22 @@
     	<div class="fl registerForm">
         	<form method="post" enctype="application/x-www-form-urlencoded">
            	  <label for="phone">手机号码</label>
-              <input name="phone" class="phone" id="phone" maxlength="11" />
+              <input name="phone" class="phone" id="phone" maxlength="11" onblur="keyblur(this,'^[0-9]{11}')" />
               <span class="warmming">* 请正确填写手机号码。</span>
            	  <label for="password">密码</label>
-              <input name="password" type="password" class="password" id="password" maxlength="16" />
+              <input name="password" type="password" class="password" id="password" maxlength="16" onkeyup="pwdStrong(this)" onblur="keyblur(this,'[a-zA-Z0-9]{6,}')"/>
               <span class="warmming">* 登录密码不能少于6个字符。</span>
-              <div class="passwordTips tc f12"><span class="pr5">密码强度</span><span class="passwordTips-0">弱</span><span class="passwordTips-1">中</span><span class="passwordTips-1">强</span></div>
+              <div class="passwordTips tc f12"><span class="pr5">密码强度</span><span class="passwordTips-0 pwdStrong">弱</span><span class="passwordTips-1 pwdStrong">中</span><span class="passwordTips-1 pwdStrong">强</span></div>
            	  <label for="confirmPassword">确定密码</label>
-              <input name="confirmPassword" class="confirmPassword" id="confirmPassword" maxlength="16" />
-              <span class="warmming">* 登录密码不能少于6个字符。</span>
+              <input name="confirmPassword" type="password" class="confirmPassword" id="confirmPassword" maxlength="16" onblur="reValue(this,document.getElementById('password'))" />
+              <span class="warmming">* 与密码不相同。</span>
            	  <label for="realname">真实姓名</label>
               <input name="realname" class="realname" id="realname" />
            	  <label for="mail">邮箱</label>
               <input name="mail" class="mail" id="mail" />
            	  <label for="hospital">所属医院</label>
-              <input name="hospital" class="hospital" id="hospital" />
-              <span class="warmming"> 请填写医院全名</span>
+              <input name="hospital" class="hospital" id="hospital" onblur="keyblur(this,'[\u4E00-\u9FA5\uF900-\uFA2D]')" />
+              <span class="warmming">* 请填写医院全名</span>
            	  <label for="department">所属科室</label>
               <select class="department" name="department" id="department">
               	<option>请选择科室</option>
@@ -76,7 +76,7 @@
     <div class="footer-row1-link w1000 mAuto">
       <dl>
         <dd class="listitem"><a href="index.php">首页</a> </dd>
-        <dd class="listitem"><a href="aboutAs.html">走进旭阳</a> </dd>
+        <dd class="listitem"><a href="aboutAs.php">走进旭阳</a> </dd>
         <dd class="listitem"><a href="productserver-medical.php">产品服务</a> </dd>
         <dd class="listitem"><a href="health-assort.php">营养保健</a> </dd>
         <dd class="listitem"><a href="case-share.php">健康分享</a> </dd>
@@ -104,5 +104,6 @@
   </div>
   </div>
 </footer>
+<script type="text/javascript" src="js/checkInput.js"></script>
 </body>
 </html>

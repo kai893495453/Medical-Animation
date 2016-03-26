@@ -1,16 +1,16 @@
 <?php
   $arr = array(
-    0=>array('title'=>"撞车后腿不能动，需要康复，该怎么办0？",'publish_date'=>"2015-07-07",'url_link'=>"#0"),
-    1=>array('title'=>"撞车后腿不能动，需要康复，该怎么办1？",'publish_date'=>"2015-07-07",'url_link'=>"#1"),
-    2=>array('title'=>"撞车后腿不能动，需要康复，该怎么办2？",'publish_date'=>"2015-07-07",'url_link'=>"#2"),
-    3=>array('title'=>"撞车后腿不能动，需要康复，该怎么办3？",'publish_date'=>"2015-07-07",'url_link'=>"#3"),
-    4=>array('title'=>"撞车后腿不能动，需要康复，该怎么办4？",'publish_date'=>"2015-07-07",'url_link'=>"#4"),
-    5=>array('title'=>"撞车后腿不能动，需要康复，该怎么办5？",'publish_date'=>"2015-07-07",'url_link'=>"#5"),
-    6=>array('title'=>"撞车后腿不能动，需要康复，该怎么办6？",'publish_date'=>"2015-07-07",'url_link'=>"#6"),
-    7=>array('title'=>"撞车后腿不能动，需要康复，该怎么办7？",'publish_date'=>"2015-07-07",'url_link'=>"#7"),
-    8=>array('title'=>"撞车后腿不能动，需要康复，该怎么办8？",'publish_date'=>"2015-07-07",'url_link'=>"#8"),
-    9=>array('title'=>"撞车后腿不能动，需要康复，该怎么办9？",'publish_date'=>"2015-07-07",'url_link'=>"#9"),
-    10=>array('title'=>"撞车后腿不能动，需要康复，该怎么办10？",'publish_date'=>"2015-07-07",'url_link'=>"#10")
+    0=>array('title'=>"撞车后腿不能动，需要康复，该怎么办0？",'publish_date'=>"2015-07-07",'url_link'=>"0"),
+    1=>array('title'=>"撞车后腿不能动，需要康复，该怎么办1？",'publish_date'=>"2015-07-07",'url_link'=>"1"),
+    2=>array('title'=>"撞车后腿不能动，需要康复，该怎么办2？",'publish_date'=>"2015-07-07",'url_link'=>"2"),
+    3=>array('title'=>"撞车后腿不能动，需要康复，该怎么办3？",'publish_date'=>"2015-07-07",'url_link'=>"3"),
+    4=>array('title'=>"撞车后腿不能动，需要康复，该怎么办4？",'publish_date'=>"2015-07-07",'url_link'=>"4"),
+    5=>array('title'=>"撞车后腿不能动，需要康复，该怎么办5？",'publish_date'=>"2015-07-07",'url_link'=>"5"),
+    6=>array('title'=>"撞车后腿不能动，需要康复，该怎么办6？",'publish_date'=>"2015-07-07",'url_link'=>"6"),
+    7=>array('title'=>"撞车后腿不能动，需要康复，该怎么办7？",'publish_date'=>"2015-07-07",'url_link'=>"7"),
+    8=>array('title'=>"撞车后腿不能动，需要康复，该怎么办8？",'publish_date'=>"2015-07-07",'url_link'=>"8"),
+    9=>array('title'=>"撞车后腿不能动，需要康复，该怎么办9？",'publish_date'=>"2015-07-07",'url_link'=>"9"),
+    10=>array('title'=>"撞车后腿不能动，需要康复，该怎么办10？",'publish_date'=>"2015-07-07",'url_link'=>"10")
   )
 ?>
 <!DOCTYPE html>
@@ -26,7 +26,7 @@
 
 <nav id="nav" class="nav">
   <div id="nav-logo" class="nav-logo">
-    <div id="nav-logo-img" class="nav-logo-img"><a href="index.html"><img src="images/logo.png"/></a></div>
+    <div id="nav-logo-img" class="nav-logo-img"><a href="index.php"><img src="images/logo.png"/></a></div>
     <div id="nav-logo-account" class="nav-logo-account">
       <div class="nav-account"><a href="#登录">登录</a> | <a href="#注册">注册</a></div>
       <div class="nav-search">
@@ -56,10 +56,10 @@
         <dd>
         	<a href="#">走进旭阳</a>
             <ul class="nav-list-subnav">
-                <li><a href="aboutAs.html">关于旭阳</a></li>
-                <li><a href="contact.html">联系旭阳</a></li>
-                <li><a href="shopMap.html">销售网络</a></li>
-                <li><a href="recruit.html">招贤纳士</a></li>
+                <li><a href="aboutAs.php">关于旭阳</a></li>
+                <li><a href="contact.php">联系旭阳</a></li>
+                <li><a href="shopMap.php">销售网络</a></li>
+                <li><a href="recruit.php">招贤纳士</a></li>
             </ul>
         </dd>
         <dd>
@@ -110,7 +110,7 @@
                 <?php
                   foreach($arr as $key=>$value):
                 ?>
-                	<dt <?php if($key<3){echo "class=\"topThree\"";} ?>><a href=<?php echo $value['url_link']; ?>><?php echo $value['title']; ?></a></dt>
+                	<dt <?php if($key<3){echo "class=\"topThree\"";} ?>><a href=case-detail.php?id=<?php echo $value['url_link']; ?>><?php echo $value['title']; ?></a></dt>
                     <dd><?php echo $value['publish_date']; ?></dd>
                 <?php
                   endforeach;
@@ -144,7 +144,7 @@
     <div class="footer-row1-link w1000 mAuto">
       <dl>
         <dd class="listitem"><a href="index.php">首页</a> </dd>
-        <dd class="listitem"><a href="aboutAs.html">走进旭阳</a> </dd>
+        <dd class="listitem"><a href="aboutAs.php">走进旭阳</a> </dd>
         <dd class="listitem"><a href="productserver-medical.php">产品服务</a> </dd>
         <dd class="listitem"><a href="health-assort.php">营养保健</a> </dd>
         <dd class="listitem"><a href="case-share.php">健康分享</a> </dd>

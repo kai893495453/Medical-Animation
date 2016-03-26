@@ -1,10 +1,10 @@
 <?php 
 	$arr = array(
-		0=>array("news_date"=>"2015-10-04","img_url"=>"images/news-list.png","news_title"=>"蚌埠市旭阳医疗动漫科技分公司成立0","news_detail"=>"2015年8月4日，旭阳医疗科技《第118期情景实战潜能口才特训营》隆重开幕。本次课程由口才中国创始人、亚洲情景实战潜能;口才第一教练罗盛华导师亲自主讲。120名学员怀着对课程的无比期5","alink"=>"#0"),
-		1=>array("news_date"=>"2015-12-03","img_url"=>"images/news-list.png","news_title"=>"蚌埠市旭阳医疗动漫科技分公司成立1","news_detail"=>"2015年8月4日，旭阳医疗科技《第118期情景实战潜能口才特训营》隆重开幕。本次课程由口才中国创始人、亚洲情景实战潜能;口才第一教练罗盛华导师亲自主讲。120名学员怀着对课程的无比期4","alink"=>"#1"),
-		2=>array("news_date"=>"2015-8-02","img_url"=>"images/news-list.png","news_title"=>"蚌埠市旭阳医疗动漫科技分公司成立2","news_detail"=>"2015年8月4日，旭阳医疗科技《第118期情景实战潜能口才特训营》隆重开幕。本次课程由口才中国创始人、亚洲情景实战潜能;口才第一教练罗盛华导师亲自主讲。120名学员怀着对课程的无比期3","alink"=>"#2"),
-		3=>array("news_date"=>"2015-2-01","img_url"=>"images/news-list.png","news_title"=>"蚌埠市旭阳医疗动漫科技分公司成立3","news_detail"=>"2015年8月4日，旭阳医疗科技《第118期情景实战潜能口才特训营》隆重开幕。本次课程由口才中国创始人、亚洲情景实战潜能;口才第一教练罗盛华导师亲自主讲。120名学员怀着对课程的无比期2","alink"=>"#3"),
-		4=>array("news_date"=>"2015-8-05","img_url"=>"images/news-list.png","news_title"=>"蚌埠市旭阳医疗动漫科技分公司成立4","news_detail"=>"2015年8月4日，旭阳医疗科技《第118期情景实战潜能口才特训营》隆重开幕。本次课程由口才中国创始人、亚洲情景实战潜能;口才第一教练罗盛华导师亲自主讲。120名学员怀着对课程的无比期1","alink"=>"#4"),
+		0=>array("news_date"=>"2015-10-04","img_url"=>"images/news-list.png","news_title"=>"蚌埠市旭阳医疗动漫科技分公司成立0","news_detail"=>"2015年8月4日，旭阳医疗科技《第118期情景实战潜能口才特训营》隆重开幕。本次课程由口才中国创始人、亚洲情景实战潜能;口才第一教练罗盛华导师亲自主讲。120名学员怀着对课程的无比期5","id"=>"0"),
+		1=>array("news_date"=>"2015-12-03","img_url"=>"images/news-list.png","news_title"=>"蚌埠市旭阳医疗动漫科技分公司成立1","news_detail"=>"2015年8月4日，旭阳医疗科技《第118期情景实战潜能口才特训营》隆重开幕。本次课程由口才中国创始人、亚洲情景实战潜能;口才第一教练罗盛华导师亲自主讲。120名学员怀着对课程的无比期4","id"=>"1"),
+		2=>array("news_date"=>"2015-8-02","img_url"=>"images/news-list.png","news_title"=>"蚌埠市旭阳医疗动漫科技分公司成立2","news_detail"=>"2015年8月4日，旭阳医疗科技《第118期情景实战潜能口才特训营》隆重开幕。本次课程由口才中国创始人、亚洲情景实战潜能;口才第一教练罗盛华导师亲自主讲。120名学员怀着对课程的无比期3","id"=>"2"),
+		3=>array("news_date"=>"2015-2-01","img_url"=>"images/news-list.png","news_title"=>"蚌埠市旭阳医疗动漫科技分公司成立3","news_detail"=>"2015年8月4日，旭阳医疗科技《第118期情景实战潜能口才特训营》隆重开幕。本次课程由口才中国创始人、亚洲情景实战潜能;口才第一教练罗盛华导师亲自主讲。120名学员怀着对课程的无比期2","id"=>"3"),
+		4=>array("news_date"=>"2015-8-05","img_url"=>"images/news-list.png","news_title"=>"蚌埠市旭阳医疗动漫科技分公司成立4","news_detail"=>"2015年8月4日，旭阳医疗科技《第118期情景实战潜能口才特训营》隆重开幕。本次课程由口才中国创始人、亚洲情景实战潜能;口才第一教练罗盛华导师亲自主讲。120名学员怀着对课程的无比期1","id"=>"4"),
 	);
 ?>
 <!DOCTYPE html>
@@ -20,7 +20,7 @@
 <body>
 <nav id="nav" class="nav">
   <div id="nav-logo" class="nav-logo">
-    <div id="nav-logo-img" class="nav-logo-img"><a href="index.html"><img src="images/logo.png"/></a></div>
+    <div id="nav-logo-img" class="nav-logo-img"><a href="index.php"><img src="images/logo.png"/></a></div>
     <div id="nav-logo-account" class="nav-logo-account">
       <div class="nav-account"><a href="#登录">登录</a> | <a href="#注册">注册</a></div>
       <div class="nav-search">
@@ -50,10 +50,10 @@
         <dd>
         	<a href="#">走进旭阳</a>
             <ul class="nav-list-subnav">
-                <li><a href="aboutAs.html">关于旭阳</a></li>
-                <li><a href="contact.html">联系旭阳</a></li>
-                <li><a href="shopMap.html">销售网络</a></li>
-                <li><a href="recruit.html">招贤纳士</a></li>
+                <li><a href="aboutAs.php">关于旭阳</a></li>
+                <li><a href="contact.php">联系旭阳</a></li>
+                <li><a href="shopMap.php">销售网络</a></li>
+                <li><a href="recruit.php">招贤纳士</a></li>
             </ul>
         </dd>
         <dd>
@@ -96,14 +96,14 @@
    	  		<div class="fl">
             	<div class="dates pl15">
                 	<div class="day"><?php echo substr(strrchr($value['news_date'],"-"),1); ?></div>
-                	<div class="month"><?php echo substr($value['news_date'],0,strrpos($value['news_date'],"-")) ?></div>
+                	<div class="month"><?php echo substr($value['news_date'],0,strrpos($value['news_date'],"-")); ?></div>
                 </div>
             </div>
             <div class="fl news-img"><img src=<?php echo $value['img_url']; ?>></div>
             <div class="fl news-content">
-            	<h2><a href=<?php echo $value['alink']; ?>><?php echo $value['news_title']; ?></a></h2>
+            	<h2><a href=news-detail.php?id=<?php echo $value['id']; ?>><?php echo $value['news_title']; ?></a></h2>
                 <p><?php echo $value['news_detail']; ?>
-                <a href=<?php echo $value['alink']; ?> class="detail">[详情]</a></p>
+                <a href=news-detail.php?id=<?php echo $value['id']; ?> class="detail">[详情]</a></p>
             </div>
         	<div class="cb f0"></div>
         </li>
@@ -135,7 +135,7 @@
     <div class="footer-row1-link w1000 mAuto">
       <dl>
         <dd class="listitem"><a href="index.php">首页</a> </dd>
-        <dd class="listitem"><a href="aboutAs.html">走进旭阳</a> </dd>
+        <dd class="listitem"><a href="aboutAs.php">走进旭阳</a> </dd>
         <dd class="listitem"><a href="productserver-medical.php">产品服务</a> </dd>
         <dd class="listitem"><a href="health-assort.php">营养保健</a> </dd>
         <dd class="listitem"><a href="case-share.php">健康分享</a> </dd>

@@ -4,17 +4,17 @@
       'date'=>'2015-8-04',
       'title'=>'成年人是否需要补充维生素D？',
       'content'=>'众多的中国人从小就烙上了深深的补钙情节，似乎很多的问题都可以归结到缺钙上，补钙的问题也延伸到了成年身上，颈椎痛补钙、腰椎痛补钙补钙的问题也延伸到了成年身上，颈椎痛补钙、腰椎痛补钙……',
-      'url'=>'#0'),
+      'id'=>'#0'),
     1=>array(
       'date'=>'2015-8-04',
       'title'=>'成年人是否需要补充维生素D？',
       'content'=>'众多的中国人从小就烙上了深深的补钙情节，似乎很多的问题都可以归结到缺钙上，补钙的问题也延伸到了成年身上，颈椎痛补钙、腰椎痛补钙补钙的问题也延伸到了成年身上，颈椎痛补钙、腰椎痛补钙……',
-      'url'=>'#1'),
+      'id'=>'#1'),
     2=>array(
       'date'=>'2015-8-04',
       'title'=>'成年人是否需要补充维生素D？',
       'content'=>'众多的中国人从小就烙上了深深的补钙情节，似乎很多的问题都可以归结到缺钙上，补钙的问题也延伸到了成年身上，颈椎痛补钙、腰椎痛补钙补钙的问题也延伸到了成年身上，颈椎痛补钙、腰椎痛补钙……',
-      'url'=>'#2')
+      'id'=>'#2')
   );
 ?>
 <!DOCTYPE html>
@@ -30,7 +30,7 @@
 
 <nav id="nav" class="nav">
   <div id="nav-logo" class="nav-logo">
-    <div id="nav-logo-img" class="nav-logo-img"><a href="index.html"><img src="images/logo.png"/></a></div>
+    <div id="nav-logo-img" class="nav-logo-img"><a href="index.php"><img src="images/logo.png"/></a></div>
     <div id="nav-logo-account" class="nav-logo-account">
       <div class="nav-account"><a href="#登录">登录</a> | <a href="#注册">注册</a></div>
       <div class="nav-search">
@@ -60,10 +60,10 @@
         <dd>
         	<a href="#">走进旭阳</a>
             <ul class="nav-list-subnav">
-                <li><a href="aboutAs.html">关于旭阳</a></li>
-                <li><a href="contact.html">联系旭阳</a></li>
-                <li><a href="shopMap.html">销售网络</a></li>
-                <li><a href="recruit.html">招贤纳士</a></li>
+                <li><a href="aboutAs.php">关于旭阳</a></li>
+                <li><a href="contact.php">联系旭阳</a></li>
+                <li><a href="shopMap.php">销售网络</a></li>
+                <li><a href="recruit.php">招贤纳士</a></li>
             </ul>
         </dd>
         <dd>
@@ -127,9 +127,9 @@
                       </div>
                       <div class="fl news-img"><img src="images/news-list.png"/></div>
                       <div class="fl news-content">
-                        <h2><a href="#"><?php echo $value['title'];  ?></a></h2>
+                        <h2><a href=health-detail.php?id=<?php echo $value['id'];  ?>><?php echo $value['title'];  ?></a></h2>
                           <p><?php echo $value['content'];  ?></p>
-                          <a href=<?php echo $value['url'];  ?> class="detail">[ 查看详情 ]</a>
+                          <a href=health-detail.php?id=<?php echo $value['id'];  ?> class="detail">[ 查看详情 ]</a>
                       </div>
                     <div class="cb f0"></div>
                   </li>
@@ -166,10 +166,10 @@
     <div class="footer-row1-link w1000 mAuto">
       <dl>
         <dd class="listitem"><a href="index.php">首页</a> </dd>
-        <dd class="listitem"><a href="aboutAs.html">走进旭阳</a> </dd>
-        <dd class="listitem"><a href="productserver-medical.html">产品服务</a> </dd>
-        <dd class="listitem"><a href="health-assort.html">营养保健</a> </dd>
-        <dd class="listitem"><a href="case-share.html">健康分享</a> </dd>
+        <dd class="listitem"><a href="aboutAs.php">走进旭阳</a> </dd>
+        <dd class="listitem"><a href="productserver-medical.php">产品服务</a> </dd>
+        <dd class="listitem"><a href="health-assort.php">营养保健</a> </dd>
+        <dd class="listitem"><a href="case-share.php">健康分享</a> </dd>
         <dt class="listitem-next"><a href="#">前往旭日器械商城&gt;</a></dt>
         <dd class="cb"></dd>
       </dl>
