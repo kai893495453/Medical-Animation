@@ -1,3 +1,7 @@
+<?php 
+  /**[查询联系方式]*/
+  $contactArr = get_all("select * from contact");
+?>
 <footer class="footer">
   <div class="footer-row1">
     <div class="footer-row1-link w1000 mAuto">

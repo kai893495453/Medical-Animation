@@ -3,13 +3,6 @@
   require_once "include/common.fun.php";
   /**[查询轮播图]*/
   $carouselArr = get_all("select * from carousel where n_id = 2 order by c_id desc limit 1");
-  /**[导航]*/
-  $navs = get_all("select * from nav where fid = 0");
-  foreach($navs as $k=>$v){
-    $navs[$k]['subnavArr'] = get_all("select * from nav where fid =".$v['n_id']);
-  }
-  /**[查询联系方式]*/
-  $contactArr = get_all("select * from contact");
 ?>
 <!DOCTYPE html>
 <html>

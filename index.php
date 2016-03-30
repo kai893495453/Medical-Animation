@@ -5,15 +5,8 @@
 <?php
   /**[查询轮播图]*/
   $carouselArr = get_all("select * from carousel where n_id = 1 order by c_id desc limit 0,3");
-  /**[导航]*/
-  $navs = get_all("select * from nav where fid = 0");
-  foreach($navs as $k=>$v){
-    $navs[$k]['subnavArr'] = get_all("select * from nav where fid =".$v['n_id']);
-  }
   /**[查询新闻动态]*/
   $newsArr = get_all("select * from news where ntid = 2 order by nid desc limit 0,9");
-  /**[查询联系方式]*/
-  $contactArr = get_all("select * from contact");
   $productTitle = mysqli_query($connect,"select * from nav where fid = 10");
   while($productTitles = mysqli_fetch_array($productTitle)){
     $productTitleArr[] = $productTitles;
