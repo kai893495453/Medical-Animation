@@ -2,15 +2,17 @@
   require_once "include/config.php";
   require_once "include/common.fun.php";
   require "include/cut_page.php";
+  require_once "include/breadcrumb.php";
   /**[查询轮播图]*/
   $carouselArr = get_all("select * from carousel where n_id = 3 order by c_id desc limit 1");
   /**[查询栏目标题]*/
-  $sonNav = get_one("select * from nav where n_id = {$_GET['id']} limit 1");
-  $childNav = get_all("select * from nav where fid = {$_GET['id']}");
+  $id = @$_GET['id']!=null||@$_GET['id']!="" ? $_GET['id']:10;
+  $sonNav = @get_one("select * from nav where n_id = {$id} limit 1");
+  $childNav = @get_all("select * from nav where fid = {$id}");
   if(!is_array($childNav)){
-    $fid = get_one("select fid from nav where n_id={$_GET['id']} limit 1");
+    $fid = @get_one("select fid from nav where n_id={$id} limit 1");
     if(is_array($fid)){
-      $childNav = get_all("select * from nav where fid = {$fid['fid']}");
+      $childNav = @get_all("select * from nav where fid = {$fid['fid']}");
     }
   }
   //分页查询
@@ -19,12 +21,12 @@
   $pagesize = 9;
   $list = $pagesize * ($page-1);
   /**[查询产品]*/
-  $productArr = get_all("select * from product where tag_id={$_GET['id']} order by p_id desc limit {$list},{$pagesize}");
-  $total = get_one("select count(*) as c from product where tag_id={$_GET['id']} order by p_id desc");
+  $productArr = @get_all("select * from product where tag_id={$id} order by p_id desc limit {$list},{$pagesize}");
+  $total = @get_one("select count(*) as c from product where tag_id={$id} order by p_id desc");
   $total = $total['c'];
   //如果查出来的不是数组，就通过get带过来的id查它儿子
   if (!is_array($productArr)){
-    $product = get_one("select * from nav where fid={$_GET['id']} limit 1");
+    $product = @get_one("select * from nav where fid={$id} limit 1");
     if(is_array($product)){
       $productArr = get_all("select * from product where tag_id={$product['n_id']} order by p_id desc limit {$list},{$pagesize}");
     }
@@ -42,7 +44,7 @@
 
 <body>
 <?php require_once "include/header.php"; ?>
-<article class="breadcrumbs f12">当前位置： <a href="index.php">首页</a> > <?php @include "include/breadcrumb.php"; ?></article>
+<article class="breadcrumbs f12">当前位置： <a href="index.php">首页</a> > <?php get_bread($id);?></article>
 <!--正文开始-->
 <main>
   <div class="content w1000 mAuto">

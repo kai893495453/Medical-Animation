@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"prev",
+				"newsPrev"
+			],
+			[
+				"fi",
+				"field"
+			],
+			[
+				"en",
+				"end_pos"
+			],
+			[
+				"tot",
+				"total"
+			],
+			[
+				"pages",
+				"pagesize"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"get_all",
+				"get_all_nav"
+			],
+			[
 				"is_fil",
 				"is_uploaded_file"
 			],
@@ -18,10 +46,6 @@
 			[
 				"date_defa",
 				"date_default_timezone_set"
-			],
-			[
-				"en",
-				"endif"
 			],
 			[
 				"sub",
@@ -74,10 +98,6 @@
 			[
 				"end",
 				"endforeach"
-			],
-			[
-				"con",
-				"config"
 			],
 			[
 				"pro",
@@ -160,19 +180,18 @@
 	"buffers":
 	[
 		{
-			"file": "admin/index.php",
+			"file": "news-detail.php",
 			"settings":
 			{
-				"buffer_size": 1044,
-				"line_ending": "Windows",
-				"name": "index.php"
+				"buffer_size": 2127,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "admin/upload_do.php",
+			"file": "news-list.php",
 			"settings":
 			{
-				"buffer_size": 821,
+				"buffer_size": 3411,
 				"line_ending": "Windows"
 			}
 		}
@@ -215,22 +234,60 @@
 	"expanded_folders":
 	[
 		"/E/internet/nginx/html",
-		"/E/internet/nginx/html/admin",
 		"/E/internet/nginx/html/include"
 	],
 	"file_history":
 	[
-		"/E/internet/nginx/html/include/config.php",
-		"/E/internet/nginx/html/index.php",
-		"/E/internet/nginx/html/include/footer.php",
-		"/E/internet/nginx/html/include/header.php",
-		"/E/internet/nginx/html/recruit.php",
+		"/E/internet/nginx/html/include/breadcrumb.php",
+		"/E/internet/nginx/html/productserver-medical.php",
+		"/E/internet/nginx/html/news-list.php",
 		"/E/internet/nginx/html/contact.php",
-		"/E/internet/nginx/html/case-share.php",
-		"/E/internet/nginx/html/include/menu.php",
+		"/E/internet/nginx/html/shopmap.php",
 		"/E/internet/nginx/html/aboutAs.php",
+		"/E/internet/nginx/html/recruit.php",
+		"/E/internet/nginx/html/productserver-detail.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI04.624/cpxq.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI59.624/header.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI60.624/ylqx.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI36.624/cpfw22.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI87.624/common.func.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI75.624/cpfw.php",
+		"/E/internet/nginx/html/forget-3.php",
+		"/E/internet/nginx/html/forget-1.php",
+		"/E/internet/nginx/html/forget-2.php",
+		"/E/internet/nginx/html/register-Dr.php",
+		"/E/internet/nginx/html/login.php",
+		"/E/internet/nginx/html/register.php",
+		"/E/internet/nginx/html/index.php",
+		"/E/internet/nginx/html/include/header.php",
+		"/E/internet/nginx/html/include/footer.php",
+		"/E/internet/nginx/html/health-mineral.php",
+		"/E/internet/nginx/html/news-detail.php",
+		"/E/internet/nginx/html/case-share.php",
+		"/E/internet/nginx/html/case-detail.php",
+		"/E/internet/nginx/html/health-nutrient.php",
+		"/E/internet/nginx/html/health-vitamin.php",
 		"/E/internet/nginx/html/health-assort.php",
+		"/E/internet/nginx/html/health-detail.php",
 		"/E/internet/nginx/html/include/common.fun.php",
+		"/E/internet/nginx/html/include/cut_page.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI93.945/cpfw.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI69.944/nav.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI61.944/nav.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI93.944/news.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI57.944/product.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI41.944/common.func.php",
+		"/E/internet/nginx/html/include/Breadcrumb.php",
+		"/E/internet/nginx/html/admin/nav.php",
+		"/E/internet/nginx/html/admin/addNav.php",
+		"/E/internet/nginx/html/admin/addNav_do.php",
+		"/E/internet/nginx/html/nav.php",
+		"/E/internet/nginx/homework/nav.php",
+		"/E/internet/nginx/homework/uploadManage/index.php",
+		"/E/internet/nginx/html/admin/index.php",
+		"/E/internet/nginx/html/admin/upload_do.php",
+		"/E/internet/nginx/html/include/config.php",
+		"/E/internet/nginx/html/include/menu.php",
 		"/E/internet/nginx/html/import.php",
 		"/E/internet/nginx/html/css/index.css",
 		"/C/Users/Administrator/Desktop/index.html",
@@ -238,22 +295,13 @@
 		"/E/internet/nginx/html/项目.txt",
 		"/E/internet/nginx/html/test.php",
 		"/E/internet/nginx/html/test.html",
-		"/E/internet/nginx/html/news-list.php",
-		"/E/internet/nginx/html/productserver-medical.php",
-		"/E/internet/nginx/html/productserver-detail.php",
-		"/E/internet/nginx/html/health-nutrient.php",
-		"/E/internet/nginx/html/health-vitamin.php",
-		"/E/internet/nginx/html/health-mineral.php",
-		"/E/internet/nginx/html/health-detail.php",
 		"/E/internet/nginx/html/forget-3.html",
 		"/E/internet/nginx/html/forget-2.html",
 		"/E/internet/nginx/html/forget-1.html",
 		"/E/internet/nginx/html/case-detail.html",
 		"/E/internet/nginx/html/health-vitamin_detail.php",
 		"/E/internet/nginx/html/login.html",
-		"/E/internet/nginx/html/news-detail.php",
 		"/E/internet/nginx/html/productserver-detail.html",
-		"/E/internet/nginx/html/shopmap.php",
 		"/E/internet/nginx/html/register-Dr.html",
 		"/E/internet/nginx/html/register.html",
 		"/E/internet/nginx/html/js/checkInput.js",
@@ -317,36 +365,11 @@
 		"/C/Users/Administrator/Desktop/cpts_286_lj/index.html",
 		"/C/Users/Administrator/Desktop/window.html",
 		"/D/Repositories/test1/index.html",
-		"/C/Users/Administrator/Desktop/cpts_286_lj/login.html",
-		"/C/Users/Administrator/Desktop/2/zengqingkai/index.html",
-		"/C/Users/Administrator/Desktop/1/index.html",
-		"/C/Users/Administrator/Desktop/曾庆恺_HTML5.txt",
-		"/C/Users/Administrator/Desktop/test.html",
-		"/C/Users/Administrator/Desktop/w3cfuns_code.html",
-		"/C/Users/Administrator/Desktop/asaa.html",
-		"/E/曾庆恺_深圳市美的连电子科技有限公司/css/index.css",
-		"/C/Users/Administrator/Desktop/checkForm.html",
-		"/E/曾庆恺_深圳市美的连电子科技有限公司/js/carousel.js",
-		"/E/曾庆恺_深圳市美的连电子科技有限公司/js/scroll.js",
-		"/E/曾庆恺_深圳市美的连电子科技有限公司/test.html",
-		"/G/前端项目/组件/assembly/jquery-carousel.js",
-		"/G/前端项目/组件/assembly/jquery-scroll.js",
-		"/C/Users/Administrator/Desktop/2016-03-09/carousel.html",
-		"/C/Users/Administrator/Desktop/scroll.js",
-		"/E/曾庆恺_深圳市美的连电子科技有限公司/js/scrollToObj.js",
-		"/G/前端/项目/组件/assembly/moveScroll.js",
-		"/E/曾庆恺_深圳市美的连电子科技有限公司/js/moveScroll.js",
-		"/E/曾庆恺_深圳市美的连电子科技有限公司/css/common.css",
-		"/C/Users/Administrator/Desktop/2016-03-09/tesetCarousel.html",
-		"/C/Users/Administrator/Desktop/2016-03-09/test.html",
-		"/C/Users/Administrator/Desktop/多级导航.html",
-		"/C/Users/Administrator/Desktop/scrollToTop.html",
-		"/C/Users/Administrator/Desktop/2016-03-09/homework.html",
-		"/C/Users/Administrator/Desktop/prototype.html"
+		"/C/Users/Administrator/Desktop/cpts_286_lj/login.html"
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -360,6 +383,29 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"*",
+			"select nid ",
+			" nid ",
+			"nid",
+			"newsArr",
+			"arr",
+			"_GET['page']",
+			"$_GET['page']",
+			"$_GET['id']",
+			"2",
+			"end",
+			"start",
+			"cut",
+			"id",
+			"newsArr",
+			"html",
+			"for",
+			"html",
+			"\"",
+			"page}",
+			"productArr",
+			"childNav",
+			"<i>|</i>",
 			"time(),",
 			"y",
 			"echo",
@@ -464,30 +510,7 @@
 			"<",
 			">",
 			"<",
-			"div",
-			"500px",
-			"red",
-			"linear",
-			"rotates",
-			"\n	<script type=\"text/javascript\" src=\"js/jquery-carousel.js\"></script>",
-			"productDetails",
-			"itemTitle",
-			"</a>",
-			"this",
-			"}",
-			"scrollToObj",
-			"tipsBox",
-			"scrollToObj",
-			"''",
-			"itemTitle",
-			"<a name=",
-			"</a>",
-			"scrollToObj",
-			"scrollToTop",
-			"scrollToObj",
-			"offsetTop",
-			"<ul class=\"submenu\">\n							<li class=\"active\"><a href=\"#\">一次性医疗配件</a></li>\n							<li><a href=\"#\">重复性医疗配件</a></li>\n							<li><a href=\"#\">家庭健康管理产品</a></li>\n							<div class=\"cb\"></div>\n						</ul>",
-			"submenu"
+			"div"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -511,64 +534,67 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "admin/index.php",
+					"file": "news-detail.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1044,
+						"buffer_size": 2127,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1036,
-								1036
+								1993,
+								1993
 							]
 						],
 						"settings":
 						{
-							"auto_name": "index.php",
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 300.0,
+						"translation.y": 780.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "admin/upload_do.php",
+					"file": "news-list.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 821,
+						"buffer_size": 3411,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								703,
-								703
+								84,
+								6
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 180.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -580,7 +606,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 36.0
 	},
 	"layout":
 	{

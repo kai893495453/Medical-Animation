@@ -1,3 +1,9 @@
+<?php 
+  require_once "include/config.php";
+  require_once "include/common.fun.php";
+  /**[导航]*/
+  $navs = get_all("select * from nav where fid = 0");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +18,7 @@
 <nav id="nav" class="nav">
   <div id="nav-logo" class="nav-logo">
     <div id="nav-logo-img" class="nav-logo-img">
-    	<a href="index.html"><img src="images/logo.png"/></a>
+    	<a href="index.php"><img src="images/logo.png"/></a>
     </div>
     <div class="cb"></div>
   </div>
@@ -42,46 +48,14 @@
               <div class="agreeClause fl">我已阅读并接受<a class="clauseLink" href="#">《旭阳医疗器械服务条款》。</a></div>
               <div class="cb"></div>
               <input name="submit" class="submit" type="submit" id="submit" value="注册" />
-              <div class="loginQuestion mt10 f12 tr">已经注册？<a href="login.html" class="gotoLogin">请登录</a></div>
+              <div class="loginQuestion mt10 f12 tr">已经注册？<a href="login.php" class="gotoLogin">请登录</a></div>
             </form>
 		</div>
         <div class="fr company"><img src="images/company.png"></div>
         <div class="cb"></div>
     </div>
 </main>
-<footer class="footer">
-  <div class="footer-row1">
-    <div class="footer-row1-link w1000 mAuto">
-      <dl>
-        <dd class="listitem"><a href="index.php">首页</a> </dd>
-        <dd class="listitem"><a href="aboutAs.php">走进旭阳</a> </dd>
-        <dd class="listitem"><a href="productserver-medical.php">产品服务</a> </dd>
-        <dd class="listitem"><a href="health-assort.php">营养保健</a> </dd>
-        <dd class="listitem"><a href="case-share.php">健康分享</a> </dd>
-        <dt class="listitem-next"><a href="#">前往旭日器械商城&gt;</a></dt>
-        <dd class="cb"></dd>
-      </dl>
-    </div>
-  </div>
-  <div class="footer-row2">
-    <div class="footer-row2-detail w1000 mAuto">
-      <div class="fl pt20">
-        <p class="pb10"><img src="images/detail_address.png" hspace="5" vspace="0" align="absmiddle" />地址：广州市天河区燕岭路120号金燕大厦502</p>
-        <p class="pb10"><img src="images/detail_mail.png" hspace="5" vspace="0" align="absmiddle" />邮箱：123456789@qq.com</p>
-      </div>
-      <div class="fl pt20 footer-row2-detail-col2">
-        <p class="pb10"><img src="images/detail_phone.png" hspace="5" vspace="0" align="absmiddle" />联系电话：440-009-9778</p>
-        <p class="pb10"><img src="images/detail_fax.png" hspace="5" vspace="0" align="absmiddle" />传真：1234567891231</p>
-      </div>
-      <p class="fr pt20 code"><img src="images/code.png" width="73" height="73"></p>
-      <div class="cb"></div>
-      <p class="pl5 pt10 fl address">&copy;1996-2015 ZhengBang京ICP备050567892号<span class="textIndent">旭阳医疗动漫科技有限公司</span></p>
-      <p class="fr pr5 pt10 scan"><span>扫一扫关注旭阳微信</span></p>
-      <p class="cb"></p>
-    </div>
-  </div>
-  </div>
-</footer>
+<?php require_once "include/footer.php"; ?>
 <script type="text/javascript" src="js/checkInput.js"></script>
 </body>
 </html>

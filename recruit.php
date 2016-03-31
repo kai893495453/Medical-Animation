@@ -1,6 +1,7 @@
 <?php 
   require_once "include/config.php";
   require_once "include/common.fun.php";
+  require_once "include/breadcrumb.php";
   /**[查询轮播图]*/
   $carouselArr = get_all("select * from carousel where n_id = 2 order by c_id desc limit 1");
   /**[招聘岗位]*/
@@ -33,7 +34,7 @@
       <div class="cb"></div>
     </div>
     <div class="fr content-main">
-      <article class="breadcrumbs f12">当前位置： <a href="index.php">首页</a> > <a href="#">走进旭阳</a> > <a href="#"> 招贤纳士</a></article>
+      <article class="breadcrumbs f12">当前位置： <a href="index.php">首页</a> > <?php @get_bread($_GET['id']); ?></article>
       <div class="line"></div>
       <div class="list">
         	<div class="pt30"><img src="images/pic1.png" width="738" height="309"></div>
