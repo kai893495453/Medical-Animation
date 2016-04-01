@@ -3,19 +3,39 @@
   require_once "include/common.fun.php";
   /**[查询轮播图]*/
   $carouselArr = get_all("select * from carousel where n_id = 4 order by c_id desc limit 1");
-  $arr = array(
-    0=>array('title'=>"撞车后腿不能动，需要康复，该怎么办0？",'publish_date'=>"2015-07-07",'url_link'=>"0"),
-    1=>array('title'=>"撞车后腿不能动，需要康复，该怎么办1？",'publish_date'=>"2015-07-07",'url_link'=>"1"),
-    2=>array('title'=>"撞车后腿不能动，需要康复，该怎么办2？",'publish_date'=>"2015-07-07",'url_link'=>"2"),
-    3=>array('title'=>"撞车后腿不能动，需要康复，该怎么办3？",'publish_date'=>"2015-07-07",'url_link'=>"3"),
-    4=>array('title'=>"撞车后腿不能动，需要康复，该怎么办4？",'publish_date'=>"2015-07-07",'url_link'=>"4"),
-    5=>array('title'=>"撞车后腿不能动，需要康复，该怎么办5？",'publish_date'=>"2015-07-07",'url_link'=>"5"),
-    6=>array('title'=>"撞车后腿不能动，需要康复，该怎么办6？",'publish_date'=>"2015-07-07",'url_link'=>"6"),
-    7=>array('title'=>"撞车后腿不能动，需要康复，该怎么办7？",'publish_date'=>"2015-07-07",'url_link'=>"7"),
-    8=>array('title'=>"撞车后腿不能动，需要康复，该怎么办8？",'publish_date'=>"2015-07-07",'url_link'=>"8"),
-    9=>array('title'=>"撞车后腿不能动，需要康复，该怎么办9？",'publish_date'=>"2015-07-07",'url_link'=>"9"),
-    10=>array('title'=>"撞车后腿不能动，需要康复，该怎么办10？",'publish_date'=>"2015-07-07",'url_link'=>"10")
-  )
+
+  $page = @$_GET['page']<1||@$_GET['page']==null||@$_GET['page']==""?1:$_GET['page'];
+  $pagesize = 11;
+  $total = ceil(get_one("select count(*) as c from news where ntid = 1")['c']/$pagesize);
+  $page = min($page,$total);
+  $p = $pagesize*($page-1);
+  $start = max($page-1,1);
+  $end = min($page+1,$total);
+  $article = get_all("select * from news where ntid = 1 order by nid desc limit $p,$pagesize");
+  function cut($page,$total,$start,$end){
+    $html = "";
+    if($page>1){
+        $prev = $page -1;
+        $html .= "<a href=\"?page={$prev}\" class=\"prevPage fl\">&laquo; 上一页</a>";
+    }
+    if($start<$page){
+        for($i=$start;$i<$page;$i++){
+            $html .= "<a href=\"?page={$i}\" class=\"nextNumber fl\">{$i}</a>";
+        }
+    }
+    $html .= "<a href=\"#\" class=\"numberCurrent fl\">{$page}</a>";
+    if($end>$page){
+        for($i=$page+1;$i<=$end;$i++){
+            $html .= "<a href=\"?page={$i}\" class=\"nextNumber fl\">{$i}</a>";
+        }
+    }
+    if($page<$total){
+        $next = $page+1;
+        $html .= "<a href=\"?page={$next}\" class=\"fl lastItem\">下一页 &raquo;</a>";
+    }
+    $html .= "<span class=\"fl\">共{$total}页，到第</span><input class=\"fl\" name=\"page\" type=\"text\" /> <span class=\"fl\">页</span> <input class=\"fl\" name=\"confirmSkip\" type=\"submit\" value=\"确定\" />";
+    echo $html;
+  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -45,9 +65,9 @@
             <div class="list mAuto">
             	<dl>
                 <?php
-                  foreach($arr as $key=>$value):
+                  foreach($article as $key=>$value):
                 ?>
-                	<dt <?php if($key<3){echo "class=\"topThree\"";} ?>><a href=case-detail.php?id=<?php echo $value['url_link']; ?>><?php echo $value['title']; ?></a></dt>
+                	<dt <?php if($key<3){echo "class=\"topThree\"";} ?>><a href=case-detail.php?id=<?php echo $value['nid']; ?>><?php echo $value['title']; ?></a></dt>
                     <dd><?php echo $value['publish_date']; ?></dd>
                 <?php
                   endforeach;
@@ -58,15 +78,7 @@
             <div class="pages">
             <form method="post" enctype="application/x-www-form-urlencoded">
         	<div class="pageNumber h50 fr">
-            	<a href="#" class="prevPage fl">&laquo; 上一页</a>
-            	<a href="#" class="numberCurrent fl">1</a>
-            	<a href="#" class="nextNumber fl">2</a>
-            	<a href="#" class="nextNumber fl lastItem">3</a>
-                <span class="fl">...</span>
-            	<a href="#" class="fl lastItem">下一页 &raquo;</a>
-                <span class="fl">共100页，到第</span><input class="fl" name="skipPage" type="text" value="1" />
-                <span class="fl">页</span>
-                <input class="fl" name="confirmSkip" type="submit" value="确定" />
+            	<?php echo cut($page,$total,$start,$end); ?>
                 <div class="cb"></div>
   			</div>
             <div class="cb"></div>

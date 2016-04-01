@@ -6,11 +6,9 @@
   $carouselArr = get_all("select * from carousel where n_id = 23 order by c_id desc limit 1");
   //查内容
   $id = $_GET['id'];
-  $prev = $id-1;
-  $next = $id+1;
   $news = get_one("select * from news where nid = $id limit 1");
-  $newsPrev = get_one("select title,nid from news where nid = $prev limit 1");
-  $newsNext = get_one("select title,nid from news where nid = $next limit 1");
+  $newsPrev = get_one("select title,nid from news where nid < $id order by nid desc limit 1");
+  $newsNext = get_one("select title,nid from news where nid > $id limit 1");
 ?>
 <!DOCTYPE html>
 <html lang="en">

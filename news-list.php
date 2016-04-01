@@ -57,6 +57,7 @@
     <div class="line"></div>
     <div class="main-list mAuto">
       <ul>
+      <?php if(is_array($newsArr)): ?>
       <?php foreach($newsArr as $value): ?>
       	<li>
    	  		<div class="fl">
@@ -74,6 +75,7 @@
         	<div class="cb f0"></div>
         </li>
       <?php endforeach; ?>
+      <?php endif; ?>
         <div class="cb f0"></div>
       </ul>
       <div class="pages">
