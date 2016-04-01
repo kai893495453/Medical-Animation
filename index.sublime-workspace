@@ -191,15 +191,15 @@
 			"file": "health-list.php",
 			"settings":
 			{
-				"buffer_size": 5348,
+				"buffer_size": 4893,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "news-detail.php",
+			"file": "news-list.php",
 			"settings":
 			{
-				"buffer_size": 2107,
+				"buffer_size": 3472,
 				"line_ending": "Windows"
 			}
 		}
@@ -241,15 +241,18 @@
 	},
 	"expanded_folders":
 	[
-		"/E/internet/nginx/html"
+		"/E/internet/nginx/html",
+		"/E/internet/nginx/html/css"
 	],
 	"file_history":
 	[
+		"/E/internet/nginx/html/css/common.css",
+		"/E/internet/nginx/html/health-list.php",
+		"/E/internet/nginx/html/news-detail.php",
 		"/C/Users/Administrator/Desktop/localhost.sql",
 		"/E/internet/nginx/html/include/breadcrumb.php",
 		"/E/internet/nginx/html/news-list.php",
 		"/E/internet/nginx/html/testSession.php",
-		"/E/internet/nginx/html/news-detail.php",
 		"/E/internet/nginx/html/case-detail.php",
 		"/E/internet/nginx/html/case-share.php",
 		"/E/test1/Medical-Animation/news-detail.php",
@@ -364,15 +367,13 @@
 		"/E/internet/nginx/html/testa",
 		"/E/internet/nginx/html/include.php",
 		"/C/Users/Administrator/Desktop/笔记/PHP函数.txt",
-		"/E/internet/nginx/html/css/common.css",
 		"/E/internet/nginx/html/js/jquery-scroll.js",
 		"/E/internet/nginx/html/js/jquery-carousel.js",
 		"/E/曾庆恺_深圳市美的连电子科技有限公司/js/jquery-scroll.js",
 		"/E/internet/nginx/html/array.php",
 		"/C/Users/Administrator/Desktop/cpts_286_lj/about.html",
 		"/C/Users/Administrator/Desktop/cpts_286_lj/css/style.css",
-		"/E/曾庆恺_深圳市美的连电子科技有限公司/index.html",
-		"/E/曾庆恺_深圳市美的连电子科技有限公司/js/jquery-1.12.0.min.js"
+		"/E/曾庆恺_深圳市美的连电子科技有限公司/index.html"
 	],
 	"find":
 	{
@@ -541,7 +542,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -550,45 +551,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5348,
+						"buffer_size": 4893,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								606,
-								606
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "news-detail.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2107,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								893,
-								893
+								899,
+								899
 							]
 						],
 						"settings":
@@ -602,6 +573,36 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "news-list.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3472,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2467,
+								2550
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 960.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]

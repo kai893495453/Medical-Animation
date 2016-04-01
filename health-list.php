@@ -11,30 +11,12 @@
   }
   $fid = get_one("select * from nav where n_id = {$id}");
   $leftNav = get_all("select * from nav where fid = {$fid['fid']}");
-  $col = get_one("select * from ")
+  $col = get_one("select * from news_type where typename = '{$fid['name']}'"); 
   /**[查询该栏目的内容]*/
   $page = @$_GET['page']==null||@$_GET['page']==""||@$_GET['page']<1? 1 : $_GET['page'];
   $pagesize = 3;
   $p = $pagesize * ($page-1);
-  $article = get_all("select * from news where ntid = ")
-
-  $arr = array(
-    0=>array(
-      'date'=>'2015-8-04',
-      'title'=>'成年人是否需要补充维生素D？',
-      'content'=>'众多的中国人从小就烙上了深深的补钙情节，似乎很多的问题都可以归结到缺钙上，补钙的问题也延伸到了成年身上，颈椎痛补钙、腰椎痛补钙补钙的问题也延伸到了成年身上，颈椎痛补钙、腰椎痛补钙……',
-      'id'=>'#0'),
-    1=>array(
-      'date'=>'2015-8-04',
-      'title'=>'成年人是否需要补充维生素D？',
-      'content'=>'众多的中国人从小就烙上了深深的补钙情节，似乎很多的问题都可以归结到缺钙上，补钙的问题也延伸到了成年身上，颈椎痛补钙、腰椎痛补钙补钙的问题也延伸到了成年身上，颈椎痛补钙、腰椎痛补钙……',
-      'id'=>'#1'),
-    2=>array(
-      'date'=>'2015-8-04',
-      'title'=>'成年人是否需要补充维生素A？',
-      'content'=>'众多的中国人从小就烙上了深深的补钙情节，似乎很多的问题都可以归结到缺钙上，补钙的问题也延伸到了成年身上，颈椎痛补钙、腰椎痛补钙补钙的问题也延伸到了成年身上，颈椎痛补钙、腰椎痛补钙……',
-      'id'=>'#2')
-  );
+  $article = get_all("select * from news where ntid = {$col['ntid']} limit $p,$pagesize");
 ?>
 <!DOCTYPE html>
 <html>
@@ -77,25 +59,27 @@
                 <div class="main-list mAuto">
                   <ul>
                     <?php
-                      foreach ($arr as $value):
+                      if(is_array($article)):
+                      foreach ($article as $value):
                     ?>
                     <li>
                       <div class="fl">
                           <div class="dates">
-                            <div class="day"><?php echo substr($value['date'],strripos($value['date'],"-")+1); ?></div>
-                            <div class="month"><?php echo substr($value['date'],0,strripos($value['date'],'-')); ?></div>
+                            <div class="day"><?php echo substr(strrchr($value['publish_date'],"-"),1,2); ?></div>
+                            <div class="month"><?php echo substr($value['publish_date'],0,strrpos($value['publish_date'],"-")); ?></div>
                             </div>
                         </div>
-                        <div class="fl news-img"><img src="images/news-list.png"/></div>
+                        <div class="fl news-img"><img src="<?php echo $value['img_url']; ?>"/></div>
                         <div class="fl news-content">
-                          <h2><a href=health-detail.php?id=<?php echo $value['id']; ?>><?php echo $value['title'];  ?></a></h2>
+                          <h2><a href=health-detail.php?id=<?php echo $value['nid']; ?>><?php echo $value['title'];  ?></a></h2>
                             <p><?php echo $value['content'];  ?></p>
-                            <a href=health-detail.php?id=<?php echo $value['id'];  ?> class="detail">[ 查看详情 ]</a>
+                            <a href=health-detail.php?id=<?php echo $value['nid'];  ?> class="detail">[ 查看详情 ]</a>
                         </div>
                       <div class="cb f0"></div>
                     </li>
                     <?php
                       endforeach;
+                      endif;
                     ?>
                     <div class="cb f0"></div>
                   </ul>

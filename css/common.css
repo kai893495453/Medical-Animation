@@ -228,11 +228,13 @@ h4{
 .main-list ul li .fl .dates{padding-right:15px;font-family:Arial;*width:55px;color:#fff;padding-top:0px;background:url(../images/sprite/health.png) no-repeat 0px 0px; padding-bottom:17px;width:55px;}
 .main-list ul li .fl .dates .day{font-size:36px;line-height:36px; text-align:center;}
 .main-list ul li .fl .dates .month{font-size:10px;text-align:center;line-height:14px;height:14px;}
+.main-list ul li .news-img{width:220px;height:130px;}
+.main-list ul li .news-img img{width:100%;}
 .main-list ul li .news-content{padding-left:20px;height:126px;}
 .main-list ul li .news-content h2{font-size:14px;float:none;padding-bottom:8px;}
 .main-list ul li .news-content h2 a{color:#666;}
 .main-list ul li .news-content h2 a:hover{color:#ff9900;}
-.main-list ul li .news-content p{width:422px;font-size:12px;padding-right:10px;line-height:2;}
+.main-list ul li .news-content p{width:422px;font-size:12px;padding-right:10px;line-height:2;height:70px;overflow: hidden;}
 .main-list ul li .news-content a.detail{color:#38e0c4;}
 
 
