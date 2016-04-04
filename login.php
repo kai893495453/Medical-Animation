@@ -3,6 +3,16 @@
   require_once "include/common.fun.php";
   /**[导航]*/
   $navs = get_all("select * from nav where fid = 0");
+  if(isset($_POST['username'])&&isset($_POST['password'])){
+    $username = $_POST['username'];
+    $user = get_one("select * from user where phone = {$username} limit 1");
+    if($user!=null){
+      if($user['password']==md5($_POST['password'])){
+          $_SESSION['username'] = $_POST['username'];
+          header("Location:index.php");
+      }
+    }
+  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,7 +43,7 @@
               <div class="cb"></div>
             </div>
             <div class="login">
-            	<form method="post" enctype="application/x-www-form-urlencoded">
+            	<form method="post">
                 <p class="mb20">
                	  <label for="username">账户</label>
                   <input name="username" class="username" id="username" maxlength="11" placeholder="手机号码" />

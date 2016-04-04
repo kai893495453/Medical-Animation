@@ -9,7 +9,11 @@
   <div id="nav-logo" class="nav-logo">
     <div id="nav-logo-img" class="nav-logo-img"><a href="index.php"><img src="images/logo.png"/></a></div>
     <div id="nav-logo-account" class="nav-logo-account">
+      <?php if(isset($_SESSION['username'])): ?>
+      <div class="nav-account"><?php echo "用户:".$_SESSION['username']; ?> <a href="logout.php">退出</a></div>
+      <?php else: ?>
       <div class="nav-account"><a href="login.php">登录</a> | <a href="register.php">注册</a></div>
+      <?php endif; ?>
       <div class="nav-search">
         <form method="post" enctype="application/x-www-form-urlencoded">
           <select name="nav-search-select" class="nav-search-select selectArrow" >

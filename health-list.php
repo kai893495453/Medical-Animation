@@ -16,7 +16,30 @@
   $page = @$_GET['page']==null||@$_GET['page']==""||@$_GET['page']<1? 1 : $_GET['page'];
   $pagesize = 3;
   $p = $pagesize * ($page-1);
+  $pageCount = ceil((get_one("select count(*) as c from news where ntid={$col['ntid']} limit 1")['c'])/$pagesize);
+  $start = max($page-1,1);
+  $end = min($page+1,$pageCount);
   $article = get_all("select * from news where ntid = {$col['ntid']} limit $p,$pagesize");
+  function cut_page($page,$pagesize,$pageCount,$start,$end,$id){
+  	$html = "";
+  	if($page>1){
+  		$prev = $page-1;
+  		$html .= "<a href=\"?id={$id}&page={$prev}\" class=\"prevPage fl\">&laquo; 上一页</a>";
+  	}
+  	for($i=$start;$i<$page;$i++){
+  		$html .= "<a href=\"?id={$id}&page={$i}\" class=\"nextNumber fl\">{$i}</a>";
+  	}
+  	$html .= "<a href=\"#\" class=\"numberCurrent fl\">{$page}</a>";
+  	for($i=$end;$i>$page;$i--){
+  		$html .= "<a href=\"?id={$id}&page={$i}\" class=\"nextNumber fl\">{$i}</a>";
+  	}
+  	if($page<$pageCount){
+  		$next = $page+1;
+  		$html .= "<a href=\"?id={$id}&page={$next}\" class=\"fl lastItem\">下一页 &raquo;</a>";
+  	}
+  	$html .= "<span class=\"fl\">共{$pageCount}页，到第</span><input class=\"fl\" name=\"page\" type=\"text\" /> <span class=\"fl\">页</span> <input class=\"fl\" name=\"confirmSkip\" type=\"submit\" value=\"确定\" /><input type=\"hidden\" name=\"id\" value=\"{$id}\" />";
+  	echo $html;
+  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -86,17 +109,9 @@
                 </div>
             </div>
             <div class="pages">
-            <form method="post" enctype="application/x-www-form-urlencoded">
+            <form>
         	<div class="pageNumber h50 fr">
-            	<a href="#" class="prevPage fl">&laquo; 上一页</a>
-            	<a href="#" class="numberCurrent fl">1</a>
-            	<a href="#" class="nextNumber fl">2</a>
-            	<a href="#" class="nextNumber fl lastItem">3</a>
-                <span class="fl">...</span>
-            	<a href="#" class="fl lastItem">下一页 &raquo;</a>
-                <span class="fl">共100页，到第</span><input class="fl" name="skipPage" type="text" value="1" />
-                <span class="fl">页</span>
-                <input class="fl" name="confirmSkip" type="submit" value="确定" />
+            	<?php cut_page($page,$pagesize,$pageCount,$start,$end,$id); ?>
                 <div class="cb"></div>
   			</div>
             <div class="cb"></div>
