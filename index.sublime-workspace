@@ -1,0 +1,711 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"img_jp",
+				"IMG_JPG"
+			],
+			[
+				"imagec",
+				"imagecolorallocatealpha"
+			],
+			[
+				"mt",
+				"mt_rand"
+			],
+			[
+				"page",
+				"page"
+			],
+			[
+				"ac",
+				"article"
+			],
+			[
+				"prev",
+				"newsPrev"
+			],
+			[
+				"fi",
+				"field"
+			],
+			[
+				"en",
+				"end_pos"
+			],
+			[
+				"tot",
+				"total"
+			],
+			[
+				"pages",
+				"pagesize"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"get_all",
+				"get_all_nav"
+			],
+			[
+				"is_fil",
+				"is_uploaded_file"
+			],
+			[
+				"recr",
+				"recruit_info"
+			],
+			[
+				"getAll",
+				"get_all"
+			],
+			[
+				"date_defa",
+				"date_default_timezone_set"
+			],
+			[
+				"sub",
+				"subnav"
+			],
+			[
+				"img",
+				"img_url"
+			],
+			[
+				"co",
+				"connect"
+			],
+			[
+				"conta",
+				"contact"
+			],
+			[
+				"car",
+				"carouselArr"
+			],
+			[
+				"ca",
+				"carouselArr"
+			],
+			[
+				"mysqli_fetch",
+				"mysqli_fetch_array"
+			],
+			[
+				"depa",
+				"depa_phone"
+			],
+			[
+				"hos",
+				"hospital"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"onkey",
+				"onkeydown	Attr"
+			],
+			[
+				"a-zA-Z",
+				"a-zA-Z0-9"
+			],
+			[
+				"end",
+				"endforeach"
+			],
+			[
+				"pro",
+				"prompt"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"files",
+				"filesize"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"arr",
+				"arrNav"
+			],
+			[
+				"carou",
+				"carouselArr"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"inc",
+				"incl1	include_once …"
+			],
+			[
+				"PRINT",
+				"print_r"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"an",
+				"animation"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"ani",
+				"anim	animation"
+			],
+			[
+				"tr",
+				"transform"
+			],
+			[
+				"scr",
+				"scrollToObj"
+			],
+			[
+				"sc",
+				"scrollHeight"
+			],
+			[
+				"tips",
+				"tipsBox"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"proto",
+				"prototype"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "admin/login.php",
+			"settings":
+			{
+				"buffer_size": 3964,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/index.php",
+			"settings":
+			{
+				"buffer_size": 4470,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 311.0,
+		"last_filter": "Package Control: ip",
+		"selected_items":
+		[
+			[
+				"Package Control: ip",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/internet/nginx/html",
+		"/E/internet/nginx/html/admin",
+		"/E/internet/nginx/html/admin/fun",
+		"/E/internet/nginx/html/admin/include"
+	],
+	"file_history":
+	[
+		"/E/internet/nginx/html/admin/fun/rm.php",
+		"/E/internet/nginx/html/admin/include/config.php",
+		"/E/internet/nginx/html/admin/include/common.fun.php",
+		"/E/internet/nginx/html/admin/logout.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI98.288/login.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI51.288/config.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI35.288/config.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI56.288/login.php",
+		"/E/internet/nginx/html/admin/login.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI68.584/config.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI07.584/config.php",
+		"/E/internet/nginx/html/test.php",
+		"/E/internet/nginx/html/test1.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI91.176/login.php",
+		"/E/internet/nginx/html/admin/index.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI76.176/login.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI14.176/login.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI08.472/login.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI63.472/login.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI28.768/login.php",
+		"/E/internet/nginx/html/admin/addNav.php",
+		"/E/internet/nginx/html/admin/about-list.php",
+		"/E/internet/nginx/html/admin/list.html",
+		"/E/internet/nginx/html/admin/nav-list.php",
+		"/E/internet/nginx/html/admin/nav.php",
+		"/C/Users/Administrator/Desktop/rm.php",
+		"/C/Users/Administrator/Desktop/common.func.php",
+		"/E/internet/nginx/html/admin/addNav2.php",
+		"/E/internet/nginx/html/admin/addNav_do.php",
+		"/E/internet/nginx/html/include/config.php",
+		"/E/internet/nginx/html/admin/get_thumb.php",
+		"/E/internet/nginx/html/captcha.php",
+		"/E/internet/nginx/html/contact.php",
+		"/C/Users/Administrator/Documents/Tencent Files/893495453/FileRecv/img-func.php",
+		"/C/Users/Administrator/Documents/Tencent Files/893495453/FileRecv/img.php",
+		"/C/Users/Administrator/Documents/Tencent Files/893495453/FileRecv/index (1).php",
+		"/C/Users/Administrator/Documents/Tencent Files/893495453/FileRecv/index.php",
+		"/E/internet/nginx/html/register.php",
+		"/E/internet/nginx/html/css/register.css",
+		"/E/internet/nginx/html/news-detail.php",
+		"/E/internet/nginx/html/admin/upload_do.php",
+		"/E/internet/nginx/html/news-list.php",
+		"/E/internet/nginx/html/health-list.php",
+		"/E/internet/nginx/html/css/common.css",
+		"/C/Users/Administrator/Desktop/localhost.sql",
+		"/E/internet/nginx/html/include/breadcrumb.php",
+		"/E/internet/nginx/html/testSession.php",
+		"/E/internet/nginx/html/case-detail.php",
+		"/E/internet/nginx/html/case-share.php",
+		"/E/test1/Medical-Animation/news-detail.php",
+		"/E/test1/Medical-Animation/productserver-detail.php",
+		"/E/internet/nginx/html/productserver-medical.php",
+		"/E/internet/nginx/html/shopmap.php",
+		"/E/internet/nginx/html/aboutAs.php",
+		"/E/internet/nginx/html/recruit.php",
+		"/E/internet/nginx/html/productserver-detail.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI04.624/cpxq.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI59.624/header.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI60.624/ylqx.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI36.624/cpfw22.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI87.624/common.func.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI75.624/cpfw.php",
+		"/E/internet/nginx/html/forget-3.php",
+		"/E/internet/nginx/html/forget-1.php",
+		"/E/internet/nginx/html/forget-2.php",
+		"/E/internet/nginx/html/register-Dr.php",
+		"/E/internet/nginx/html/login.php",
+		"/E/internet/nginx/html/index.php",
+		"/E/internet/nginx/html/include/header.php",
+		"/E/internet/nginx/html/include/footer.php",
+		"/E/internet/nginx/html/health-mineral.php",
+		"/E/internet/nginx/html/health-nutrient.php",
+		"/E/internet/nginx/html/health-vitamin.php",
+		"/E/internet/nginx/html/health-assort.php",
+		"/E/internet/nginx/html/health-detail.php",
+		"/E/internet/nginx/html/include/common.fun.php",
+		"/E/internet/nginx/html/include/cut_page.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI93.945/cpfw.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI69.944/nav.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI61.944/nav.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI93.944/news.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI57.944/product.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI41.944/common.func.php",
+		"/E/internet/nginx/html/include/Breadcrumb.php",
+		"/E/internet/nginx/html/nav.php",
+		"/E/internet/nginx/homework/nav.php",
+		"/E/internet/nginx/homework/uploadManage/index.php",
+		"/E/internet/nginx/html/include/menu.php",
+		"/E/internet/nginx/html/import.php",
+		"/E/internet/nginx/html/css/index.css",
+		"/C/Users/Administrator/Desktop/index.html",
+		"/E/internet/nginx/开发/项目.txt",
+		"/E/internet/nginx/html/项目.txt",
+		"/E/internet/nginx/html/test.html",
+		"/E/internet/nginx/html/forget-3.html",
+		"/E/internet/nginx/html/forget-2.html",
+		"/E/internet/nginx/html/forget-1.html",
+		"/E/internet/nginx/html/case-detail.html",
+		"/E/internet/nginx/html/health-vitamin_detail.php",
+		"/E/internet/nginx/html/login.html",
+		"/E/internet/nginx/html/productserver-detail.html",
+		"/E/internet/nginx/html/register-Dr.html",
+		"/E/internet/nginx/html/register.html",
+		"/E/internet/nginx/html/js/checkInput.js",
+		"/C/Users/Administrator/Desktop/笔记/MySQL.txt",
+		"/E/internet/nginx/html/homework/phpinfo.php",
+		"/E/internet/nginx/html/phpMyAdmin/libraries/sanitizing.lib.php",
+		"/C/Users/Administrator/Desktop/d.html",
+		"/C/Users/Administrator/Desktop/d.css",
+		"/E/internet/nginx/html/homework/zz/index.php",
+		"/E/internet/nginx/html/homework/zz/正则验证表单.php",
+		"/E/internet/nginx/html/recruit.html",
+		"/E/internet/nginx/html/shopmap.html",
+		"/E/internet/nginx/html/aboutAs.html",
+		"/E/internet/nginx/html/contact.html",
+		"/E/internet/nginx/html/news-detail.html",
+		"/E/internet/nginx/html/news-list.html",
+		"/E/internet/nginx/html/case-share.html",
+		"/C/Users/Administrator/Desktop/index1.php",
+		"/C/Users/Administrator/Desktop/index.php",
+		"/E/internet/nginx/html/homework/zz/test1.php",
+		"/E/internet/nginx/html/homework/zz/test.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI02.616/pcre.php",
+		"/E/internet/nginx/html/作业/zz/test.php",
+		"/E/internet/nginx/html/uploadManage/index.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI39.232/files.php",
+		"/E/internet/nginx/html/zz/test.php",
+		"/E/internet/nginx/html/fileManage/index.php"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\"",
+			"<td>2013-06-21</td>",
+			"../",
+			"x",
+			"html",
+			"0",
+			"$",
+			"createfrom",
+			"$size-4",
+			"font",
+			"$height",
+			"$width",
+			"20-4",
+			"$size",
+			"font",
+			"$height",
+			"$width",
+			"128",
+			"font.ttf",
+			"16,20",
+			"255",
+			"128",
+			"\n ",
+			"\n",
+			" class=\"\"",
+			"newsNext",
+			"newsPrev",
+			"}",
+			"cut",
+			"start",
+			"cut",
+			"\"",
+			"\");\n",
+			"\"",
+			"*",
+			"select nid ",
+			" nid ",
+			"nid",
+			"newsArr",
+			"arr",
+			"_GET['page']",
+			"$_GET['page']",
+			"$_GET['id']",
+			"2",
+			"end",
+			"start",
+			"cut",
+			"id",
+			"newsArr",
+			"html",
+			"for",
+			"html",
+			"\"",
+			"page}",
+			"productArr",
+			"childNav",
+			"<i>|</i>",
+			"time(),",
+			"y",
+			"echo",
+			".\"<br>\"",
+			"productArr",
+			"查询",
+			"subnavArr",
+			" \n",
+			"subnavArr",
+			"subnav",
+			"subnavArr",
+			"$_ENV['connect']",
+			"$connect",
+			"newsArr",
+			"subnavArr",
+			"5*$i",
+			"productArr",
+			"mr10",
+			"pr fl",
+			" pr",
+			"<?php echo $val['title']; ?>",
+			" fl",
+			"pb10 pr",
+			"productArr",
+			"product",
+			"其他",
+			"newsArr",
+			"click",
+			"carouselArr",
+			"		",
+			"\"\"",
+			"query(",
+			"alink",
+			"#",
+			"alink",
+			"#",
+			"news-list",
+			"#",
+			"urlAddr",
+			"更多",
+			"url",
+			"news_",
+			"Arr",
+			"arr",
+			"#",
+			"html",
+			"php",
+			"html",
+			"keyblur",
+			"reValue",
+			"{6,}",
+			"blur",
+			"旭阳新研发的医疗器械上市",
+			"2.",
+			"2",
+			"html",
+			"php",
+			"html",
+			"2015-07-07\")",
+			"array",
+			"0=>",
+			"0",
+			"/',$",
+			"~",
+			"/",
+			"rbox-inner",
+			"比利时恐袭26人亡百余人伤 欧盟降半旗表示哀悼",
+			"php",
+			"main-product-show",
+			"php",
+			"size"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"&lt;",
+			"&gt;",
+			"&lt;",
+			"&gt;",
+			"&lt;",
+			"&gt;"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "admin/login.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3964,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								757,
+								757
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "admin/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4470,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2421,
+								2421
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 167.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

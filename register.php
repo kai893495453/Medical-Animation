@@ -102,7 +102,7 @@ function isMail($mail){
               <span class="warmming" <?php if(isset($errors['mail'])){echo "style=display:inline-block";} ?>>* 邮箱格式不正确。</span>
            	  <label for="imageCode">验证码</label>
               <input name="imageCode" class="imageCode fl mr10" id="imageCode" />
-              <img class="codeImg fl" src="images/identifyingCode.png"/><a class="changeCode" href="#changeCode">换一张</a>
+              <img class="codeImg fl" src="captcha.php" onclick="this.src='captcha.php'" /><a class="changeCode" onclick="this.previousElementSibling.src='captcha.php'">换一张</a>
               <span class="warmming codeWarm">* 验证码错误。</span>
               <div class="cb"></div>
               <input type="checkbox" name="agree" id="agree" class="agree" />
